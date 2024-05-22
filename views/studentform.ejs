@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data</title>
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+</head>
+<body>
+    <form id="studentform" method="POST" action="/submit">
+        <h1>STUDENT DATA</h1>
+        Name: &nbsp; 
+        <input type="text" name="stname"><br><br>
+        Roll No:
+        <input type="number" name="rollno"><br><br>
+        Contact:
+        <input type="number" name="contact"><br><br>
+        Password:
+        <input type="password" id="password" name="password"><br><br>
+        Confirm password:
+        <input type="password" id="cnf-password"> 
+        <p class="error" id="password-error" hidden>Password doesn't match</p>
+        <input type="submit" name="submit">
+
+    </form>
+    <script src="/js/index.js"></script>
+</body>
+</html>
